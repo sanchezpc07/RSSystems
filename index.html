@@ -4,303 +4,188 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RS Systems | Ingeniería y Automatización Tecnológica</title>
-  <style>
-    /* Estilos Base Estándar */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      background-color: #090d16;
-      color: #cbd5e1;
-      min-height: 100vh;
-      line-height: 1.6;
-      background-image: linear-gradient(rgba(34, 211, 238, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(34, 211, 238, 0.03) 1px, transparent 1px);
-      background-size: 30px 30px;
-    }
-    a { text-decoration: none; color: inherit; }
+  <!-- Enlace a la hoja de estilos externa -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+  <header>
+    <div class="container header-flex">
+      <div class="logo-area">
+        <span>RS SYSTEMS</span>
+      </div>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#soluciones">Soluciones</a>
+        <a href="#ia-web">IA & Web</a>
+        <a href="#academia">Academia RS</a>
+      </nav>
+      <a href="https://wa.me" target="_blank" class="btn-contact">
+        Contacto Inmediato
+      </a>
+    </div>
+  </header>
 
-    /* Header */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background-color: rgba(9, 13, 22, 0.9);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid #1e293b;
-      height: 75px;
-    }
-    .header-flex {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 100%;
-    }
-    .logo-area {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 900;
-      font-size: 1.4rem;
-      letter-spacing: 0.05em;
-      background: linear-gradient(to right, #22d3ee, #3b82f6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    nav { display: none; gap: 25px; font-size: 0.9rem; font-weight: 600; }
-    nav a { color: #94a3b8; transition: color 0.2s; }
-    nav a:hover { color: #22d3ee; }
-    @media (min-width: 768px) { nav { display: flex; } }
+  <section id="inicio" class="container">
+    <div class="hero">
+      <div>
+        <div class="badge">
+          <div class="dot"></div>
+          Ingeniería de Sistemas & Automatización con IA
+        </div>
+        <h1>¿Problemas con tu tecnología o listo para <span class="text-gradient">automatizar tu negocio</span>?</h1>
+        <p>Tu aliado tecnológico integral en un solo lugar. Ofrecemos desde soporte técnico profesional especializado hasta el diseño y despliegue de asistentes virtuales inteligentes con IA.</p>
+        <a href="https://wa.me" target="_blank" class="btn-whatsapp">
+          Cotizar Solución por WhatsApp
+        </a>
+      </div>
+      
+      <div class="dashboard">
+        <div class="dash-header">
+          <div class="circles">
+            <div class="circle bg-r"></div>
+            <div class="circle bg-y"></div>
+            <div class="circle bg-g"></div>
+          </div>
+          <span>rs-systems-core // active_agents</span>
+        </div>
+        <p style="color: #64748b; margin-bottom: 12px;">// Orquestando infraestructura en tiempo real...</p>
+        <div class="dash-row">
+          <span>[Agente_Soporte]: Diagnóstico remoto</span>
+          <span class="status-ok">ONLINE</span>
+        </div>
+        <div class="dash-row">
+          <span>[Agente_Seguridad]: Monitoreo CCTV</span>
+          <span class="status-ok">OPTIMAL</span>
+        </div>
+        <div class="dash-row">
+          <span>[Agente_AI_Chatbot]: Flujo de leads</span>
+          <span style="color: #22d3ee;">PROCESANDO...</span>
+        </div>
+        <div class="progress-box">
+          <span style="color: #94a3b8; font-size: 0.75rem;">Rendimiento Operacional</span>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    .btn-contact {
-      background-color: rgba(34, 211, 238, 0.1);
-      color: #22d3ee;
-      border: 1px solid rgba(34, 211, 238, 0.3);
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: 0 0 15px rgba(34, 211, 238, 0.15);
-      transition: all 0.2s;
-    }
-    .btn-contact:hover { background-color: rgba(34, 211, 238, 0.2); }
+  <section id="soluciones" class="section-padding" style="background-color: rgba(15, 23, 42, 0.2);">
+    <div class="container">
+      <div class="section-title">
+        <h2>Infraestructura y Soporte</h2>
+        <p>Soluciones de ingeniería robustas y presenciales bajo estrictos estándares de responsabilidad profesional.</p>
+      </div>
+      <div class="grid-cards">
+        <div class="card">
+          <div>
+            <div class="icon-box">💻</div>
+            <h3>Soporte Técnico Profesional</h3>
+            <p>Asistencia avanzada para sistemas y equipos de cómputo. Modalidad presencial en sitio o acceso remoto seguro y transparente.</p>
+          </div>
+          <a href="https://wa.me" target="_blank" class="btn-card-wa">Solicitar Soporte</a>
+        </div>
+        <div class="card">
+          <div>
+            <div class="icon-box">🛠️</div>
+            <h3>Mantenimiento y Limpieza</h3>
+            <p>Cuidado preventivo y correctivo profundo de hardware. Extiende la vida útil de computadores de escritorio, laptops e impresoras.</p>
+          </div>
+          <a href="https://wa.me" target="_blank" class="btn-card-wa">Agendar Mantenimiento</a>
+        </div>
+        <div class="card">
+          <div>
+            <div class="icon-box">🛡️</div>
+            <h3>Seguridad Electrónica (CCTV)</h3>
+            <p>Diseño, venta, configuración e instalación de sistemas de seguridad de alto nivel. Monitoreo remoto 24/7 de tus cámaras en tu celular.</p>
+          </div>
+          <a href="https://wa.me" target="_blank" class="btn-card-wa">Cotizar Cámaras</a>
+        </div>
+        <div class="card">
+          <div>
+            <div class="icon-box">🛒</div>
+            <h3>Hardware de Alto Rendimiento</h3>
+            <p>Venta de computadores exigentes (ingeniería/gaming), impresoras corporativas de alto volumen, periféricos y componentes avanzados.</p>
+          </div>
+          <a href="https://wa.me" target="_blank" class="btn-card-wa">Consultar Catálogo</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    /* Hero Section */
-    .hero {
-      padding: 60px 0;
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    @media (min-width: 1024px) { 
-      .hero { flex-direction: row; align-items: center; padding: 100px 0; }
-      .hero > div { flex: 1; }
-    }
-    
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background-color: rgba(34, 211, 238, 0.05);
-      border: 1px solid rgba(34, 211, 238, 0.2);
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.75rem;
-      color: #22d3ee;
-      font-weight: 600;
-      margin-bottom: 20px;
-      width: fit-content;
-    }
-    .dot {
-      width: 8px;
-      height: 8px;
-      background-color: #22d3ee;
-      border-radius: 50%;
-    }
-    .hero h1 {
-      font-size: 2.2rem;
-      font-weight: 800;
-      color: #f8fafc;
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
-    @media (min-width: 640px) { .hero h1 { font-size: 3rem; } }
-    .text-gradient {
-      background: linear-gradient(to right, #22d3ee, #34d399);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .hero p { color: #94a3b8; font-size: 1.05rem; margin-bottom: 35px; max-w: 550px; }
-    
-    .btn-whatsapp {
-      background-color: #10b981;
-      color: #022c22;
-      font-weight: 700;
-      padding: 14px 28px;
-      border-radius: 10px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
-      transition: background-color 0.2s;
-      width: 100%;
-    }
-    @media (min-width: 640px) { .btn-whatsapp { width: auto; } }
-    .btn-whatsapp:hover { background-color: #059669; }
+  <section id="ia-web" class="section-padding">
+    <div class="container">
+      <div class="section-title">
+        <span style="color: #22d3ee; font-size: 0.85rem; font-weight: bold; text-transform: uppercase;">Soluciones de Software Avanzado</span>
+        <h2 style="margin-top: 5px;">Desarrollo y Automatización Inteligente</h2>
+      </div>
+      <div class="grid-premium">
+        <div class="card-premium">
+          <div>
+            <div class="premium-top">
+              <h3>Creación Web Profesional</h3>
+              <span class="badge-mono">A MEDIDA</span>
+            </div>
+            <p class="desc">Desarrollo de Landing Pages y Sitios Web modernos, ultrarrápidos y completamente optimizados para posicionamiento en Google (SEO) y correcta visualización en celulares.</p>
+            <ul class="features-list">
+              <li><span class="check-icon">✓</span> Estructura responsiva y moderna</li>
+              <li><span class="check-icon">✓</span> Optimización de carga veloz en Colombia</li>
+              <li><span class="check-icon">✓</span> Botones integrados con tu WhatsApp</li>
+            </ul>
+          </div>
+          <a href="https://wa.me" target="_blank" class="btn-whatsapp">Cotizar mi Página Web</a>
+        </div>
+        <div class="card-premium">
+          <div>
+            <div class="premium-top">
+              <h3>Agentes e Integración de IA</h3>
+              <span class="badge-mono green">AUTOMATIZACIÓN</span>
+            </div>
+            <p class="desc">Modelado e implementación de Asistentes Virtuales inteligentes. Diseñamos sistemas capaces de automatizar tus chats de WhatsApp y atención al cliente corporativa 24/7.</p>
+            <ul class="features-list">
+              <li><span class="check-icon">✓</span> Chatbots entrenados con tus datos</li>
+              <li><span class="check-icon">✓</span> Respuestas inmediatas y flujos estructurados</li>
+              <li><span class="check-icon">✓</span> Reducción drástica en tiempos de espera</li>
+            </ul>
+          </div>
+          <a href="https://wa.me" target="_blank" class="btn-whatsapp">Automatizar mi Negocio</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    /* Dashboard */
-    .dashboard {
-      background-color: #0f172a;
-      border: 1px solid #1e293b;
-      border-radius: 16px;
-      padding: 24px;
-      font-family: monospace;
-      font-size: 0.85rem;
-      color: #22d3ee;
-    }
-    .dash-header {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #1e293b;
-      padding-bottom: 12px;
-      margin-bottom: 16px;
-    }
-    .circles { display: flex; gap: 6px; }
-    .circle { width: 10px; height: 10px; border-radius: 50%; }
-    .bg-r { background-color: #ef4444; }
-    .bg-y { background-color: #eab308; }
-    .bg-g { background-color: #22c55e; }
-    .dash-row {
-      display: flex;
-      justify-content: space-between;
-      background-color: rgba(9, 13, 22, 0.6);
-      padding: 12px;
-      border-radius: 8px;
-      border: 1px solid #1e293b;
-      margin-bottom: 10px;
-    }
-    .status-ok { color: #34d399; font-weight: bold; }
-    .progress-box { background-color: #020617; padding: 14px; border-radius: 8px; border: 1px solid #1e293b; text-align: center; margin-top: 15px; }
-    .progress-bar { width: 100%; height: 8px; background-color: #1e293b; border-radius: 10px; margin-top: 8px; overflow: hidden; }
-    .progress-fill { height: 100%; background: linear-gradient(to right, #22d3ee, #34d399); width: 96%; }
-
-    /* Secciones */
-    .section-padding { padding: 80px 0; }
-    .section-title { text-align: center; margin-bottom: 50px; }
-    .section-title h2 { font-size: 2.2rem; font-weight: 800; color: #f8fafc; }
-    .section-title p { color: #94a3b8; margin-top: 10px; font-size: 1rem; }
-
-    /* Grids Flexibles */
-    .grid-cards {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 24px;
-    }
-    @media (min-width: 640px) { .grid-cards { grid-template-columns: repeat(2, 1fr); } }
-    @media (min-width: 1024px) { .grid-cards { grid-template-columns: repeat(4, 1fr); } }
-
-    .grid-premium {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 30px;
-    }
-    @media (min-width: 768px) { .grid-premium { grid-template-columns: repeat(2, 1fr); } }
-
-    .grid-academia {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 24px;
-    }
-    @media (min-width: 768px) { .grid-academia { grid-template-columns: repeat(2, 1fr); } }
-    @media (min-width: 1024px) { .grid-academia { grid-template-columns: repeat(3, 1fr); } }
-
-    /* Tarjetas */
-    .card {
-      background-color: #0f172a;
-      border: 1px solid #1e293b;
-      border-radius: 12px;
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: border-color 0.3s;
-    }
-    .card:hover { border-color: #22d3ee; }
-    
-    .icon-box {
-      padding: 10px;
-      background-color: rgba(34, 211, 238, 0.1);
-      border: 1px solid rgba(34, 211, 238, 0.2);
-      border-radius: 8px;
-      width: fit-content;
-      color: #22d3ee;
-      margin-bottom: 16px;
-      display: inline-flex;
-    }
-    .card h3 { font-size: 1.25rem; font-weight: 700; color: #f8fafc; margin-bottom: 10px; }
-    .card p { color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px; flex-grow: 1; }
-    
-    .btn-card-wa {
-      width: 100%;
-      text-align: center;
-      background-color: #10b981;
-      color: #022c22;
-      font-weight: 700;
-      padding: 12px;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      display: block;
-      transition: background-color 0.2s;
-    }
-    .btn-card-wa:hover { background-color: #059669; }
-
-    /* Premium */
-    .card-premium {
-      background-color: #0f172a;
-      border: 1px solid #1e293b;
-      border-radius: 16px;
-      padding: 32px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: border-color 0.3s;
-    }
-    .card-premium:hover { border-color: #22d3ee; }
-    .premium-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    .premium-top h3 { font-size: 1.4rem; color: #f8fafc; }
-    .badge-mono {
-      background-color: rgba(34, 211, 238, 0.1);
-      color: #22d3ee;
-      font-size: 0.75rem;
-      font-family: monospace;
-      padding: 4px 10px;
-      border-radius: 4px;
-      border: 1px solid rgba(34, 211, 238, 0.2);
-    }
-    .badge-mono.green {
-      background-color: rgba(16, 185, 129, 0.1);
-      color: #10b981;
-      border-color: rgba(16, 185, 129, 0.2);
-    }
-    .card-premium .desc { color: #94a3b8; font-size: 0.95rem; margin-bottom: 20px; }
-    .features-list { list-style: none; margin-bottom: 30px; font-size: 0.9rem; color: #e2e8f0; }
-    .features-list li { margin-bottom: 8px; }
-    .check-icon { color: #22d3ee; font-weight: bold; margin-right: 6px; }
-
-    /* Academia */
-    .hours-badge { background-color: rgba(34, 211, 238, 0.1); color: #22d3ee; font-family: monospace; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; border: 1px solid rgba(34, 211, 238, 0.2); }
-    .cert-badge { width: fit-content; background-color: rgba(16, 185, 129, 0.1); color: #10b981; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px; border: 1px solid rgba(16, 185, 129, 0.2); margin-bottom: 20px; }
-
-    /* Footer */
-    footer { background-color: #020617; border-top: 1px solid #1e293b; padding: 48px 0; color: #64748b; font-size: 0.9rem; margin-top: 50px; }
-    .footer-grid { display: flex; flex-direction: column; gap: 32px; }
-    @media (min-width: 768px) { 
-      .footer-grid { flex-direction: row; justify-content: space-between; align-items: center; } 
-    }
-    .footer-info p { margin-top: 6px; color: #94a3b8; }
-    .footer-right { display: flex; flex-direction: column; gap: 12px; }
-    @media (min-width: 768px) { .footer-right { align-items: flex-end; text-align: right; } }
-    .btn-modal { color: #22d3ee; font-weight: 600; background: none; border: none; cursor: pointer; font-size: 0.9rem; }
-    .btn-modal:hover { text-decoration: underline; }
-
-    /* Modal */
+  <section id="academia" class="section-padding" style="background-color: rgba(15, 23, 42, 0.2);">
+    <div class="container">
+      <div class="section-title">
+        <h2>Academia RS</h2>
+        <p>Capacitaciones premium e individuales en espacio acondicionado. Clases uno a uno enfocadas en tu perfil laboral.</p>
+      </div>
+      <div class="grid-academia">
+        <div class="card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <h4 style="font-size: 1.1rem; font-weight: bold; color: #f8fafc;">Sistemas Básico</h4>
+              <span class="hours-badge">20 Horas</span>
+            </div>
+            <p>Dominio del equipo desde cero. Administración segura de archivos, navegación web eficiente, uso corporativo de correos y redacción de documentos en Word.</p>
+            <div class="cert-badge">✓ Incluye Certificado</div>
+          </div>
+          <a href="https://wa.me" target="_blank" class="btn-card-wa">Me interesa este curso</a>
+        </div>
+        <div class="card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <h4 style="font-size: 1.1rem; font-weight: bold; color: #f8fafc;">Sistemas Intermedio</h4>
+              <span class="hours-badge">20 Horas</span>
+            </div>
+            <p>Productividad en ecosistemas de la nube (Google Drive y OneDrive), construcción de presentaciones dinámicas en PowerPoint y automatización de flujos de oficina.</p>
+            <div class="cert-badge">✓ Incluye Certificado</div>
+          </div>
+          <a href="https://wa.me" target="_blank" class="btn-card-wa">Me interesa este curso</a>
+        </div>
+        <div class="card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <h4 style="font-size: 1.1rem; font-weight: bold; color: #f8fafc;">Excel Básico</h4>
